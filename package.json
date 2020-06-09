@@ -2,21 +2,30 @@
   "name": "storybook-visual",
   "version": "1.0.0",
   "scripts": {
-    "storybook": "start-storybook"
+    "storybook": "start-storybook",
+    "test": "jest"
   },
   "devDependencies": {
     "@babel/core": "^7.10.2",
     "@storybook/preset-typescript": "^3.0.0",
     "@storybook/react": "^5.3.19",
+    "@types/expect-puppeteer": "^4.4.3",
     "@types/jest": "^25.2.3",
+    "@types/jest-environment-puppeteer": "^4.3.1",
+    "@types/jest-image-snapshot": "^3.1.0",
+    "@types/puppeteer": "^3.0.0",
     "babel-loader": "^8.1.0",
     "jest": "^26.0.1",
+    "jest-image-snapshot": "^4.0.2",
+    "jest-puppeteer": "^4.4.0",
     "parcel": "^1.12.4",
     "prettier": "^2.0.5",
+    "puppeteer": "^3.3.0",
     "react-docgen-typescript-loader": "^3.7.2",
     "ts-jest": "^26.1.0",
     "ts-loader": "^7.0.5",
-    "typescript": "^3.9.5"
+    "typescript": "^3.9.5",
+    "webpack": "^4.43.0"
   },
   "dependencies": {
     "react": "^16.13.1",
