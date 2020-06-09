@@ -2,11 +2,14 @@
   "name": "storybook-visual",
   "version": "1.0.0",
   "scripts": {
-    "storybook": "start-storybook",
-    "test": "jest"
+    "storybook:start": "start-storybook",
+    "storybook:build": "build-storybook",
+    "test:visual": "yarn storybook:build && jest"
   },
   "devDependencies": {
     "@babel/core": "^7.10.2",
+    "@storybook/addon-storyshots": "^6.0.0-beta.23",
+    "@storybook/addon-storyshots-puppeteer": "^5.3.19",
     "@storybook/preset-typescript": "^3.0.0",
     "@storybook/react": "^5.3.19",
     "@types/expect-puppeteer": "^4.4.3",
@@ -22,6 +25,7 @@
     "prettier": "^2.0.5",
     "puppeteer": "^3.3.0",
     "react-docgen-typescript-loader": "^3.7.2",
+    "react-test-renderer": "^16.13.1",
     "ts-jest": "^26.1.0",
     "ts-loader": "^7.0.5",
     "typescript": "^3.9.5",
